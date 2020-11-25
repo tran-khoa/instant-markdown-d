@@ -71,7 +71,7 @@ let md = new MarkdownIt({
   }
 }).use(taskLists);
 
-if (argv.mathjax) md.use(require('markdown-it-mathjax')());
+md.use(require('markdown-it-mathjax')());
 
 const mjPageConfig = {
   format: ["TeX"],
